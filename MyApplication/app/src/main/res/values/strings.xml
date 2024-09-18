@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BLE Clock</string>
+    <string name="example_preference">Example Preference</string>
+    <string name="example_text">Example Text</string>
+    <string name="pick_a_color">Pick a Color</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="change_brightness">Change Brightness</string>
+</resources>

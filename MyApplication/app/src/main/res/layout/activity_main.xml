@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:onClick="onConnectButtonClick"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="64dp" /> <!-- Increased margin top for the first button -->
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:onClick="onDisconnectButtonClick"
+        android:background="@drawable/rounded_button"
+        android:visibility="gone"
+        android:layout_marginTop="64dp" /> <!-- Increased margin bottom, hidden initially -->
+
+    <Button
+        android:id="@+id/colorPickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a Color"
+        android:onClick="openColorPicker"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="32dp" /> <!-- Increased margin top -->
+
+    <!-- New position for auto brightness mode button -->
+    <ToggleButton
+        android:id="@+id/autoBrightnessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Auto Off"
+        android:textOn="Auto On"
+        android:checked="false"
+        android:onClick="onAutoBrightnessButtonClick"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="32dp" /> <!-- Increased margin top -->
+
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:layout_marginTop="32dp" /> <!-- Increased margin top -->
+
+    <TextView
+        android:id="@+id/colorDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="32dp" /> <!-- Increased margin top -->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
