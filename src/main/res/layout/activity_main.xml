@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <!-- Connect Button -->
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:onClick="onConnectButtonClick"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="32dp"
+        android:elevation="8dp"
+        android:textColor="#000000" />
+
+    <!-- Disconnect Button -->
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:onClick="onDisconnectButtonClick"
+        android:background="@drawable/rounded_button"
+        android:visibility="gone"
+        android:layout_marginTop="32dp"
+        android:elevation="8dp"
+        android:textColor="#000000" />
+
+    <!-- Color Picker Button -->
+    <Button
+        android:id="@+id/colorPickerButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Pick a Color"
+        android:onClick="openColorPicker"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="32dp"
+        android:elevation="8dp"
+        android:textColor="#000000" />
+
+    <!-- Auto Brightness ToggleButton -->
+    <ToggleButton
+        android:id="@+id/autoBrightnessButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textOff="Auto Brightness Off"
+        android:textOn="Auto Brightness On"
+        android:checked="false"
+        android:onClick="onAutoBrightnessButtonClick"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="32dp"
+        android:elevation="8dp"
+        android:textColor="#000000" />
+
+    <!-- Brightness SeekBar -->
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:layout_marginTop="32dp"
+        android:thumb="@drawable/thumb_custom"
+        android:progressDrawable="@drawable/progress_custom"
+        android:elevation="8dp" />
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:elevation="8dp" />
+
+</LinearLayout>

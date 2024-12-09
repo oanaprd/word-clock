@@ -1,0 +1,13 @@
+<!-- res/drawable/thumb_custom.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="30dp" android:height="30dp" android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#009688" />
+        </shape>
+    </item>
+    <item android:width="20dp" android:height="20dp" android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
